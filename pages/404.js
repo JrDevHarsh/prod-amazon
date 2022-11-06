@@ -31,14 +31,14 @@ const CustomErrorPage = () => {
               </b>
               <br />
               <span>
-                We're sorry. The Web address you entered is not a functioning
-                page on our site.
+                We&#39;re sorry. The Web address you entered is not a
+                functioning page on our site.
               </span>
               <br />
               <b className="relative">
                 <span className="absolute top-1/2 -translate-y-1/2 w-0 h-0 border-4 border-solid border-transparent border-l-c-orange"></span>
                 <span className="ml-3">
-                  Go to Prod-amazon's{" "}
+                  Go to Prod-amazon&#39;s{" "}
                   <Link href="/" className="text-[#004B91] underline">
                     Prod-amazon
                   </Link>{" "}

@@ -50,6 +50,7 @@ const ProductId = () => {
                   height={350}
                   width={290}
                   objectFit="contain"
+                  alt={`${product.title} image`}
                 />
               </div>
             </div>

@@ -1,6 +1,6 @@
 {
   "name": "prod-amazon",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "The main goal of this project is to make a clone of world's largest e-commerce shopping website i.e. Amazon using Next.js.",
   "keywords": [
     "prod-amazon",
