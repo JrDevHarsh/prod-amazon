@@ -1,34 +1,89 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<p align="center">
+  <a aria-label="Next.js version" href="https://vercel.com](https://github.com/vercel/next.js">
+    <img src="https://img.shields.io/badge/NEXT.JS-V13.0.0-ff9900?style=for-the-badge&logo=nextdotjs&labelColor=131921">
+  </a>
+  <a aria-label="React.js version" href="https://www.npmjs.com/package/next">
+    <img alt="" src="https://img.shields.io/badge/REACT.JS-V18.2.0-007ec6?style=for-the-badge&logo=react&labelColor=131921">
+  </a>
+  <a aria-label="License" href="https://github.com/JunDevHarsh/amazon-clone/blob/main/LICENSE">
+    <img alt="" src="https://img.shields.io/npm/l/next.svg?style=for-the-badge&labelColor=000000">
+  </a>
+</p>
 
-## Getting Started
+# Prod-Amazon
 
-First, run the development server:
+The main goal of this project is to make a clone of world's largest e-commerce shopping website i.e. [Amazon](https://www.amazon.in/) using `Next.js`.
+
+## Tech Stack
+
+- **Next.js:** Next.js is a JavaScript framework that enables you to build superfast and extremely user-friendly static websites, as well as web applications using React.
+
+- **Tailwind Css:** Tailwind CSS is basically a utility-first CSS framework for rapidly building custom user interfaces.
+
+- **Redux:** Redux is an open-source JavaScript library for managing and centralizing application state.
+
+## Run Locally
+
+To develop locally:
+
+1. [Fork](https://help.github.com/articles/fork-a-repo/) this repository to your GitHub account and then [clone](https://help.github.com/articles/cloning-a-repository/) it to your local device.
 
 ```bash
-npm run dev
-# or
-yarn dev
+  git clone https://github.com/JunDevHarsh/prod-amazon.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Open the project directory
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+```bash
+  cd prod-amazon
+```
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+3. Create a new branch:
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+```bash
+  git checkout -b MY_BRANCH_NAME
+```
 
-## Learn More
+4. Install the dependencies with:
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+  npm install
+  or
+  npm i
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+5. Start developing and watch for code changes:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+```bash
+  npm run dev
+```
 
-## Deploy on Vercel
+## Contributing
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+We love your input! We want to make contributing to this project as easy and transparent as possible, whether it's:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- Reporting a bug
+- Discussing the current state of the code
+- Submitting a fix
+- Proposing new features
+- Becoming a maintainer
+
+### Steps to contribute
+
+- Step 1: Fork the repository
+- Step 2: Clone the repository
+- Step 3: Create a new branch
+- Step 4: There are two possibilities you can follow
+  - Create or make new components for the project
+  - Find bugs or improve the issues
+- Step 5: Commit your changes
+- Step 6: Push your changes to Github
+- Step 7: Submit a PR
+
+## Authors
+
+- Harshdeep Singh - [@JunDevHarsh](https://www.github.com/JunDevHarsh)
+
+## License
+
+[MIT](https://github.com/JunDevHarsh/amazon-clone/blob/main/LICENSE)

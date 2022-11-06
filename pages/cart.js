@@ -1,13 +1,12 @@
 import Head from "next/head";
-import Banner from "../components/Banner/Banner";
 import Header from "../components/Header/Header";
-import ProductContainer from "../components/Layout/ProductContainer";
+import CartLayout from "../components/Layout/CartLayout";
 
-export default function Home({ data }) {
+export default function Cart() {
   return (
     <>
       <Head>
-        <title>Prod-Amazon | Online Shopping Website</title>
+        <title>Prod-Amazon Cart</title>
         <meta
           name="description"
           content="Prod-amazon: The goal of this project is to make a clone of the world's largest e-commerce website i.e. Amazon.in by using next-js."
@@ -23,12 +22,8 @@ export default function Home({ data }) {
         <link rel="icon" href="/icons/amazon-icon.webp" />
       </Head>
       <Header />
-      <main
-        id="pageContent"
-        className="my-0 mx-auto max-w-none min-w-[1000px] bg-c-light-white overflow-hidden min-h-[100vh]"
-      >
-        <Banner />
-        <ProductContainer />
+      <main className="my-0 mx-auto max-w-none min-w-[1000px] bg-c-light-white overflow-hidden min-h-[100vh]">
+        <CartLayout />
       </main>
     </>
   );
