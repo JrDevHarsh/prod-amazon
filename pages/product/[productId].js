@@ -13,11 +13,12 @@ const ProductId = () => {
   const router = useRouter();
   const { productId, title } = router.query;
   const product = useSelector(getProductFromId(Number(productId)));
+  console.log(title);
 
   return (
     <>
       <Head>
-        <title>{title}</title>
+        <title>{!title ? "Prod-Amazon Product Page" : title}</title>
         <meta
           name="description"
           content="Prod-amazon: The goal of this project is to make a clone of the world's largest e-commerce website i.e. Amazon.in by using next-js."

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import SearchBar from "../SearchBar/SearchBar";
 
 const NavFill = () => {
   const [category, setCategory] = useState("All");
@@ -58,7 +59,7 @@ const NavFill = () => {
   return (
     <div className="static flex flex-auto float-none h-c-60 w-auto overflow-visible">
       <dir
-        className="static mx-2.5 my-0 py-2.5 pr-1 pl-[3px] flex flex-auto float-none whitespace-nowrap h-c-60 w-auto rounded overflow-hidden"
+        className="static mx-2.5 my-0 py-2.5 pr-1 pl-[3px] flex flex-auto float-none whitespace-nowrap h-c-60 w-auto rounded overflow-visible"
         id="nav-search"
       >
         <form
@@ -94,17 +95,7 @@ const NavFill = () => {
               </div>
             </div>
           </div>
-          <div className="static -top-[5px] flex flex-1 float-none h-auto focus-within:shadow-c-1 focus-within:z-10 overflow-hidden">
-            <div className="static top-[5px] flex flex-1 float-none h-c-40 bg-white border-t border-solid border-transparent">
-              <input
-                type="text"
-                className="static top-0 left-0 pt-[7px] px-2.5 pb-2.5 h-[38px] w-full leading-4 text-base text-[#111] outline-0"
-                id="twotabsearchtextbox"
-                name="field keywords"
-                aria-label="Search"
-              />
-            </div>
-          </div>
+          <SearchBar />
           <div className="static -top-[5px] flex float-none h-auto w-auto min-w-0 focus-within:shadow-c-1 rounded rounded-tl-none rounded-bl-none focus-within:z-10 overflow-hidden">
             <div className="static top-[5px] right-0 flex float-none bg-c-light-orange hover:bg-c-dark-orange h-10 w-11 border-none overflow-hidden cursor-pointer rounded-tr rounded-br">
               <span className="static top-2.5 left-3 flex flex-1 float-none h-auto w-auto text-[#111] bg-pos-6 bg-amazon-img bg-repeat-x">
