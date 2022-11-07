@@ -2,6 +2,7 @@ import Head from "next/head";
 import Image from "next/legacy/image";
 import { useRouter } from "next/router";
 import { useSelector } from "react-redux";
+import Footer from "../../components/Footer/Footer";
 import Header from "../../components/Header/Header";
 import BuyBox from "../../components/Layout/BuyBox";
 import Price from "../../components/Price/Price";
@@ -12,11 +13,12 @@ const ProductId = () => {
   const router = useRouter();
   const { productId, title } = router.query;
   const product = useSelector(getProductFromId(Number(productId)));
+  console.log(title);
 
   return (
     <>
       <Head>
-        <title>{title}</title>
+        <title>{!title ? "Prod-Amazon Product Page" : title}</title>
         <meta
           name="description"
           content="Prod-amazon: The goal of this project is to make a clone of the world's largest e-commerce website i.e. Amazon.in by using next-js."
@@ -42,7 +44,7 @@ const ProductId = () => {
           </button>
         </div>
         {product && (
-          <div className="mx-auto my-0 px-4 flex items-start w-full">
+          <div className="mx-auto my-0 mt-8 px-4 flex items-start w-full">
             <div className="sticky top-0 left-0 h-full w-4/12">
               <div className="relative max-h-[390px] min-h-[350px] w-full">
                 <Image
@@ -87,6 +89,7 @@ const ProductId = () => {
           </div>
         )}
       </main>
+      <Footer />
     </>
   );
 };

@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Footer from "../components/Footer/Footer";
 import Header from "../components/Header/Header";
 import CartLayout from "../components/Layout/CartLayout";
 
@@ -25,6 +26,7 @@ export default function Cart() {
       <main className="my-0 mx-auto max-w-none min-w-[1000px] bg-c-light-white overflow-hidden min-h-[100vh]">
         <CartLayout />
       </main>
+      <Footer />
     </>
   );
 }
