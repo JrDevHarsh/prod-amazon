@@ -4,7 +4,7 @@ import NavRight from "../Nav/NavRight";
 
 const Header = () => {
   return (
-    <header className="relative flex float-none h-c-60">
+    <header className="relative flex float-none h-c-60" id="header">
       <div
         className="fixed top-0 left-0 flex flex-col flex-nowrap flex-flex-auto float-none min-w-[1000px] w-full z-[198]"
         id="navbar"

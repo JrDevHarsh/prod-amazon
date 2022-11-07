@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Banner from "../components/Banner/Banner";
+import Footer from "../components/Footer/Footer";
 import Header from "../components/Header/Header";
 import ProductContainer from "../components/Layout/ProductContainer";
 
@@ -30,6 +31,7 @@ export default function Home({ data }) {
         <Banner />
         <ProductContainer />
       </main>
+      <Footer />
     </>
   );
 }
