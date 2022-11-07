@@ -10,12 +10,12 @@ const ProductCart = ({ product }) => {
   return (
     <div className="my-4 flex items-start gap-x-4 w-full">
       <div className="w-1/6">
-        <Link href="/product/1">
+        <Link href={`/product/${product.id - 1}`}>
           <Image src={product.image} width={160} height={180} alt="1 image" />
         </Link>
       </div>
       <div className="w-4/6 flex flex-col items-start gap-1">
-        <Link href="/product/1">
+        <Link href={`/product/${product.id - 1}`}>
           <h2 className="text-black text-xl font-semibold tracking-wider">
             {product.title}
           </h2>
